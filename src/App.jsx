@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-
+import Sidebar from './Components/Sidebar'
 function App() {
-  
 
   return (
     <>
-      <div> twitter clone coming soon uwu</div>
+      <Sidebar />      
     </>
   )
 }
