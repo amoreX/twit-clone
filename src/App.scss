@@ -102,28 +102,44 @@
     
 }
 
-
-	#postt{
-		z-index: 2;
-		background-color: rgb(0, 0, 0);
-		width:44vw;
-		height:fit-content;
-		// transform: translate(25.1vw,0px);
-		white-space: normal;
-		overflow-wrap: break-word;
-
-		#title{
-			color:white;
-			gap:10px;
-			display: flex;
-			font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
-			font-weight: 400;
-			#username{
-				color:grey;
-			}
-
+#postt{
+	
+	padding-left: 10%;
+	z-index: 2;
+	background-color: rgb(0, 0, 0);
+	// width:44vw;
+	max-width:100%;
+	height:fit-content;
+	// transform: translate(25.1vw,0px);
+	// white-space: normal;
+	// overflow-wrap: break-word;
+	border-bottom: 0.5px solid rgb(84, 84, 84) ;
+	#title{
+		color:white;
+		gap:10px;
+		display: flex;
+		font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
+		font-weight: 400;
+		#username , #time{
+			color:grey;
 		}
 	}
+	#content{
+		color:white;
+		font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
+		font-size: 20px;
+		padding-top: 5px;
+		// white-space: normal;
+		// overflow-wrap: break-word;
+	}
+	#line{
+		width:40vw;
+		height:1px;
+		background-color: rgb(84, 84, 84);
+		// transform: translateX(10%);
+		overflow: hidden;
+	}
+}
  #mypost{
 	z-index: 2;
 		background-color: rgb(0, 0, 0);
@@ -217,7 +233,7 @@
 
 #rightside{
     background-color: rgb(0, 0, 0);
-    // position:absolute;
+    // position:static;
     // right:1%;
     color:white;
     // width: 30%;
