@@ -1,6 +1,5 @@
 #sidebar {
   background: rgb(0, 0, 0);
-  position: fixed;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -61,9 +60,7 @@
 }
 
 #nav {
-  position: absolute;
   top: 0%;
-  transform: translateX(25.1vw);
   color: rgb(255, 255, 255);
   font-size: large;
   background-color: rgb(0, 0, 0);
@@ -77,7 +74,7 @@
 }
 #nav #navelements {
   padding: 16px;
-  padding-inline: 20%;
+  padding-inline: 44.9%;
   border-bottom: 0.5px solid rgb(84, 84, 84);
   cursor: pointer;
   transition: 0.29s;
@@ -96,7 +93,6 @@
   width: 44vw;
   height: -moz-fit-content;
   height: fit-content;
-  transform: translate(25.1vw, 54px);
   white-space: normal;
   overflow-wrap: break-word;
 }
@@ -116,8 +112,9 @@
   background-color: rgb(0, 0, 0);
   color: white;
   width: 44vw;
-  height: 115%;
-  transform: translate(25.1vw, 54px);
+  padding-bottom: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
   white-space: normal;
   overflow-wrap: break-word;
   border-bottom: 0.5px solid rgb(84, 84, 84);
@@ -148,7 +145,7 @@
   width: 36vw;
   height: 1px;
   background-color: rgb(84, 84, 84);
-  transform: translate(65px, 10px);
+  transform: translateX(10%);
   overflow: hidden;
 }
 #mypost #access {
@@ -175,7 +172,7 @@
 #mypost #access #postbb {
   color: rgba(255, 255, 255, 0.46);
   background-color: rgba(29, 156, 240, 0.508);
-  transform: translateX(17vw);
+  margin-left: auto;
   display: flex;
   justify-content: center;
   width: -moz-fit-content;
@@ -196,10 +193,7 @@
 
 #rightside {
   background-color: rgb(0, 0, 0);
-  position: absolute;
-  right: 1%;
   color: white;
-  width: 30%;
   height: 100vh;
   border-left: 0.5px solid rgb(84, 84, 84);
 }

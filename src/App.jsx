@@ -3,6 +3,7 @@ import './App.css'
 import Sidebar from './Components/Sidebar'
 import Nav from './Components/navbar'
 import Rside from './Components/rightsidebar'
+import Postfr from './Components/Postfr'
 function App() {
 
   return (
