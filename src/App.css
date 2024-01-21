@@ -56,7 +56,7 @@
   transition: 0.4s;
 }
 #sidebar #postb:hover {
-  background-color: rgba(29, 156, 240, 0.907);
+  background-color: rgba(29, 156, 240, 0.833);
   cursor: pointer;
 }
 
