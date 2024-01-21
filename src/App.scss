@@ -75,7 +75,7 @@
     width:45%;
     // gap:250px;
     // justify-content: center;
-    align-items: center;
+    // align-items: center;
     // height:8vh;
     // border-right: 0.5px solid rgb(84, 84, 84);
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
@@ -84,14 +84,14 @@
     font-weight: 600;
     #navelements{
         padding:16px;
-        padding-inline:44.9%;
+        padding-inline:10vw;
         // border-right:0.5px solid rgb(84, 84, 84) ;
         border-bottom: 0.5px solid rgb(84, 84, 84);
         cursor:pointer;
         transition:0.29s;
-		z-index: 3;
+		// z-index: 3;
 		background-color: rgba(0, 0, 0, 0.073);
-		backdrop-filter: blur(24px);
+		// backdrop-filter: blur(24px);
         &:hover{
             background-color: rgba(255, 255, 255, 0.073);
         }
@@ -128,7 +128,7 @@
 	z-index: 2;
 		background-color: rgb(0, 0, 0);
 		color:white;
-		width:44vw;
+		// width:100%;
 		padding-bottom: 20px;
 		height:fit-content;
 		// transform: translate(25.1vw,54px);
@@ -159,7 +159,7 @@
 
 		}
 		#line{
-			width:36vw;
+			width:40vw;
 			height:1px;
 			background-color: rgb(84, 84, 84);
 			transform: translateX(10%);
@@ -175,7 +175,7 @@
 			svg{
 				width: 20px;
 				padding-inline:0.5px;
-				padding:6px;
+				padding:7px;
 				height: auto;
 				fill: rgb(29,155,240);
 				transition: 0.29s ease;
@@ -229,14 +229,18 @@
     #search{
         padding-top: 1%;
         padding-left: 5%;
+		position:relative;
         #searchsvg{
             z-index: 2;
             fill:rgb(62, 67, 78);
             width:22px;
             height:auto;
             position:absolute;
-            top:2.3%;
-            left:7%;
+            // top:2.3%;
+			// margin-left:5px ;
+            // right:3px;
+			left:8%;
+			top:33%;
         }
         #searchinput{
             z-index: 1;
