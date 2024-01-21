@@ -81,9 +81,117 @@
   border-bottom: 0.5px solid rgb(84, 84, 84);
   cursor: pointer;
   transition: 0.29s;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.073);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
 }
 #nav #navelements:hover {
   background-color: rgba(255, 255, 255, 0.073);
+}
+
+#postt {
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  width: 44vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translate(25.1vw, 54px);
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+#postt #title {
+  color: white;
+  gap: 10px;
+  display: flex;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+#postt #title #username {
+  color: grey;
+}
+
+#mypost {
+  z-index: 2;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 44vw;
+  height: 115%;
+  transform: translate(25.1vw, 54px);
+  white-space: normal;
+  overflow-wrap: break-word;
+  border-bottom: 0.5px solid rgb(84, 84, 84);
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+#mypost #tweetinputt {
+  padding-left: 50px;
+}
+#mypost #tweetinput {
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  width: 36vw;
+  min-height: 70px;
+  padding-top: 10px;
+  padding-left: 27px;
+  white-space: normal;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  resize: none;
+}
+#mypost #tweetinput:focus {
+  outline: none;
+}
+#mypost #line {
+  width: 36vw;
+  height: 1px;
+  background-color: rgb(84, 84, 84);
+  transform: translate(65px, 10px);
+  overflow: hidden;
+}
+#mypost #access {
+  display: flex;
+  gap: 10px;
+  height: 36px;
+  width: 39vw;
+  transform: translate(60px, 14px);
+  background-color: rgb(0, 0, 0);
+}
+#mypost #access svg {
+  width: 20px;
+  padding-inline: 0.5px;
+  padding: 6px;
+  height: auto;
+  fill: rgb(29, 155, 240);
+  transition: 0.29s ease;
+}
+#mypost #access svg:hover {
+  background-color: rgba(29, 156, 240, 0.366);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#mypost #access #postb {
+  color: rgba(255, 255, 255, 0.46);
+  background-color: rgba(29, 156, 240, 0.508);
+  transform: translateX(17vw);
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-inline: 30px;
+  align-items: center;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 24px;
+  transition: 0.4s;
+}
+#mypost #access #postb:hover {
+  background-color: rgb(29, 156, 240);
+  cursor: pointer;
+  color: white;
 }
 
 #rightside {
