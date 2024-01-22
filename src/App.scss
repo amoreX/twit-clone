@@ -42,11 +42,11 @@
 	}
 	#postb{
 		color: rgb(255, 255, 255);
-		background-color:rgb(29,155,240);
-		transform:translateX(7vw);
+		background-color:rgba(29, 156, 240, 0.789);
+		transform:translateX(6vw);
 		display:flex;
 		justify-content: center;
-		width:7%;
+		width:33%;
 		// padding-inline:30px;
 		padding:15px;
 		font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
@@ -56,9 +56,8 @@
         transition:0.47s ease-in-out;
 
 		&:hover{
-			background-color:rgba(29, 156, 240, 0.833);
+			background-color:rgb(29, 156, 240);
 			cursor:pointer;
-			width:50%;
 
 		}
 	}
@@ -151,7 +150,7 @@
 		font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
 		font-size: 20px;
 		padding-top: 5px;
-		
+
 		// white-space: normal;
 		// overflow-wrap: break-word;
 	}
@@ -469,6 +468,15 @@
 }
 
 @media screen and (max-width:1100px){
+	#postb{
+		// transform:translateX(2vw);
+		background-color:rgb(29, 156, 240);
+		&:hover {
+            background-color: rgba(29, 156, 240);
+            cursor: pointer;
+            color: white;
+        }
+	}
 	#postt{
 		// transform:translateX(10px);
 		width:70vw;
