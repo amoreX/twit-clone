@@ -35,7 +35,7 @@ export default function nav(){
                     tweets.map((tweet, index) => (
                     <Posttfr key={index}>{tweet.name}</Posttfr>
                     ))
-                        ) : (<p>Loading...</p>)}
+                        ) : (<Posttfr>Loading...</Posttfr>)}
                 
             </div>
         </div>
