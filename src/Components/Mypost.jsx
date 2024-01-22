@@ -78,9 +78,8 @@ export default function mypost(){
 
     return(
         <div id="mypost">
-            <div id="tweetinputt">
-                <textarea type="text" id="tweetinput" value={tweetText} onChange={handleTextareaChange} placeholder ="What is happening?!"/>
-            </div>
+            <textarea type="text" id="tweetinput" value={tweetText} onChange={handleTextareaChange} placeholder ="What is happening?!"/>
+            
             <div id="line"></div>
             <div id="access">
                 {gal}{gif}{svg2}{svg3}{svg4} <Postb onClick={()=>{fn()}}/>

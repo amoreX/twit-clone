@@ -242,13 +242,11 @@
   border-bottom: 0.5px solid rgb(84, 84, 84);
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-#mypost #tweetinputt {
-  padding-left: 50px;
-}
 #mypost #tweetinput {
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 20px;
   width: 36vw;
+  transform: translateX(50px);
   min-height: 70px;
   padding-top: 10px;
   padding-left: 27px;
@@ -262,6 +260,10 @@
 }
 #mypost #tweetinput:focus {
   outline: none;
+}
+#mypost #tweetinput:focus ~ #access #postbb {
+  background-color: rgb(29, 156, 240);
+  color: white;
 }
 #mypost #line {
   width: 40vw;
@@ -305,7 +307,7 @@
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 24px;
-  transition: 0.4s;
+  transition: 0.119s;
 }
 #mypost #access #postbb:hover {
   background-color: rgb(29, 156, 240);
