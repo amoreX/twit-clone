@@ -20,7 +20,7 @@ export default function mypost(){
     const postData = async () => {
         try {
           const response = await axios.post('https://twit-vtp0.onrender.com/update', {
-            tweet: tweetText,name: username
+            tweet: tweetText,name: username,
           });
           setTweetText('');
         } catch (error) {
