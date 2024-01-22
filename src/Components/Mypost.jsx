@@ -24,6 +24,7 @@ export default function mypost(){
       };
     const fn=() => {
         console.log(tweetText);
+        setTweetText('');
         postData();
     }
 
