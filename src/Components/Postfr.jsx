@@ -8,7 +8,7 @@ export default function Postfr(props){
         <div id="postt">
             <div id="title">
                 <div id="actualname"> {props.id} </div> 
-                <div id="username">@</div>
+                <div id="username">@{props.username}</div>
                 <div id="time">{Math.floor(Math.random()*10)}hr ago</div>
             </div>
             <div id="content">
