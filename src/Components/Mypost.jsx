@@ -26,6 +26,8 @@ export default function mypost(){
         console.log(tweetText);
         setTweetText('');
         postData();
+        window.location.reload();
+
     }
 
 
