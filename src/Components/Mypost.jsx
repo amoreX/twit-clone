@@ -36,7 +36,7 @@ export default function mypost(){
         postData();
         setInterval(() => {
             window.location.reload();
-        },2000);
+        },20000);
 
     }
 
