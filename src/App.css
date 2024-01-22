@@ -118,7 +118,8 @@
   font-weight: 400;
 }
 #postt #title #actualname {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 #postt #title #username, #postt #title #time {
   color: grey;
