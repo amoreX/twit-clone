@@ -26,7 +26,9 @@ export default function mypost(){
         console.log(tweetText);
         setTweetText('');
         postData();
-        window.location.reload();
+        setInterval(() => {
+            window.location.reload();
+        },2000);
 
     }
 
