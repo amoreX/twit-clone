@@ -29,11 +29,21 @@ export default function nav(){
             <Mypost/>
             <div id="allposts">
                 <Posttfr id="nihal">Meow meow</Posttfr>
-                {tweets.length > 0 ? (
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                <Posttfr id="nihal">Meow meow</Posttfr>
+                {/* {tweets.length > 0 ? (
                     tweets.map((temptweet, index) => (
                     <Posttfr key={index}>{temptweet.tweet}</Posttfr>
                     ))
-                        ) : (<p style={{ color: 'white' }}>Loading...</p>)}
+                        ) : (<p style={{ color: 'white' }}>Loading...</p>)} */}
                 
             </div>
         </div>
