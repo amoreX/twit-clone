@@ -31,6 +31,7 @@ export default function mypost(){
     
       const fn=() => {
         console.log(tweetText);
+        console.log(username);
         setTweetText('');
         postData();
         setInterval(() => {
