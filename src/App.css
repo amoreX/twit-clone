@@ -64,14 +64,14 @@
   overflow-y: scroll;
   scrollbar-width: thin;
   -ms-overflow-style: none;
-  padding-bottom: 100%;
+  padding-bottom: 500px;
   box-sizing: border-box;
 }
 #allposts::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0rem;
 }
 #allposts::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 #allposts::-webkit-scrollbar-track {
   background-color: rgb(0, 0, 0);

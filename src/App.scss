@@ -69,15 +69,15 @@
 	scrollbar-width: thin;  // For Firefox
   -ms-overflow-style: none;  // For IE 11
   &::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0rem;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
   }
   &::-webkit-scrollbar-track {
     background-color: rgb(0, 0, 0);
   }
-  padding-bottom:100%;
+  padding-bottom:500px;
   box-sizing: border-box;
 }
 #nav{
