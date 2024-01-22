@@ -16,10 +16,10 @@ export default function Postfr(props){
             </div>
             {/* <div id="line"></div> */}
             <div id="access">
-                <div id="com">{comment} 100</div>
-                <div id="rep">{repost} 400</div>
-                <div id="like">{like} 500</div>
-                <div id="poll">{poll}266</div>
+                <div id="com">{comment}{Math.floor(Math.random()*100)}</div>
+                <div id="rep">{repost}{Math.floor(Math.random()*100)}</div>
+                <div id="like">{like}{Math.floor(Math.random()*100)}</div>
+                <div id="poll">{poll}{Math.floor(Math.random()*100)}</div>
                 <div id="share">{share}</div>
             </div>
         </div>
