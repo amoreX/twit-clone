@@ -27,9 +27,9 @@ function App() {
       setUsername(storedUsername);
     }
   };
-  useEffect(() => {
-    setUserName();
-  }, []);
+  // useEffect(() => {
+  //   setUserName();
+  // }, []);
   return (
     <>
       <div className='container'>
