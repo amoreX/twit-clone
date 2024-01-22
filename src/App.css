@@ -117,6 +117,9 @@
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
+#postt #title #actualname {
+  font-size: 15px;
+}
 #postt #title #username, #postt #title #time {
   color: grey;
 }

@@ -41,7 +41,7 @@ export default function nav(){
                 <Posttfr id="nihal">Meow meow</Posttfr> */}
                 {tweets.length > 0 ? (
                     tweets.map((temptweet, index) => (
-                    <Posttfr key={index}>{temptweet.tweet}</Posttfr>
+                    <Posttfr key={index} id={temptweet.name}>{temptweet.tweet}</Posttfr>
                     ))
                         ) : (<p style={{ color: 'white' }}>Loading...</p>)}
                 

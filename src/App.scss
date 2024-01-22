@@ -137,6 +137,9 @@
 		display: flex;
 		font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
 		font-weight: 400;
+		#actualname{
+			font-size: 15px;
+		}
 		#username , #time{
 			color:grey;
 		}
