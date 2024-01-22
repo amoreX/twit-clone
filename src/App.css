@@ -59,6 +59,24 @@
   cursor: pointer;
 }
 
+#allposts {
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+#allposts::-webkit-scrollbar {
+  width: 0rem;
+}
+#allposts::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+}
+#allposts::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
 #nav {
   top: 0%;
   color: rgb(255, 255, 255);
@@ -113,6 +131,99 @@
   height: 1px;
   background-color: rgb(84, 84, 84);
   overflow: hidden;
+}
+#postt #access {
+  padding: 4px;
+  display: flex;
+  color: grey;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  transition: 0.29s ease;
+  justify-content: space-around;
+}
+#postt #access svg {
+  padding-top: 3px;
+  padding-inline: 3px;
+  padding-bottom: 2px;
+  fill: grey;
+  width: 20px;
+  height: auto;
+  transition: 0.29s ease;
+}
+#postt #access #com {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+#postt #access #com:hover {
+  cursor: pointer;
+  color: rgba(29, 156, 240, 0.781);
+}
+#postt #access #com:hover svg {
+  fill: rgba(29, 156, 240, 0.657);
+  background-color: rgba(29, 156, 240, 0.249);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#postt #access #rep {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+#postt #access #rep:hover {
+  cursor: pointer;
+  color: rgba(41, 246, 133, 0.657);
+}
+#postt #access #rep:hover svg {
+  fill: rgba(41, 246, 133, 0.657);
+  background-color: rgba(41, 246, 133, 0.183);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#postt #access #like {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+#postt #access #like:hover {
+  cursor: pointer;
+  color: rgba(240, 29, 29, 0.657);
+}
+#postt #access #like:hover svg {
+  fill: rgba(240, 29, 29, 0.657);
+  background-color: rgba(240, 29, 29, 0.292);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#postt #access #poll {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+#postt #access #poll:hover {
+  cursor: pointer;
+  color: rgba(29, 156, 240, 0.781);
+}
+#postt #access #poll:hover svg {
+  fill: rgba(29, 156, 240, 0.657);
+  background-color: rgba(29, 156, 240, 0.249);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#postt #access #share {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+#postt #access #share:hover {
+  cursor: pointer;
+  color: rgba(29, 156, 240, 0.781);
+}
+#postt #access #share:hover svg {
+  fill: rgba(29, 156, 240, 0.657);
+  background-color: rgba(29, 156, 240, 0.249);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 #mypost {

@@ -6,5 +6,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body{
+  overflow: hidden;
   margin:0px;
 }
