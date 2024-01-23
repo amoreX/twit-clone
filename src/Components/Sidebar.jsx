@@ -24,7 +24,7 @@ export default function sidebar(){
 		<div id="sidebar">
 			<Comp id={x}></Comp>
 			<Comp id={home}>Home</Comp>
-			<Comp id={search}>Search</Comp>
+			<Comp id={search}>Explore</Comp>
 			<Comp id={notification}>Notification</Comp>
 			<Comp id={msg}>Messages</Comp>
 			<Comp id={grok}>Grok</Comp>
