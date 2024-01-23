@@ -28,6 +28,7 @@ export default function nav(){
             <div id="navelements">Following</div>
         </div>
             <Mypost/>
+            {/* <Posttfr id="uwu" username="idk"></Posttfr> */}
             <div id="allposts">
                 {tweets.length > 0 ? (
                     tweets.map((temptweet, index) => (

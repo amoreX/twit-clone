@@ -8,7 +8,7 @@
   border-right: 0.5px solid rgb(84, 84, 84);
   margin: 0.1px solid white;
   width: 25%;
-  min-width: 25%;
+  min-width: 20%;
   padding-top: 5px;
   overflow: hidden;
 }
@@ -41,11 +41,11 @@
 }
 #sidebar #postb {
   color: rgb(255, 255, 255);
-  background-color: rgb(29, 155, 240);
+  background-color: rgba(29, 156, 240, 0.556);
   transform: translateX(7vw);
   display: flex;
   justify-content: center;
-  width: 7%;
+  width: 8%;
   padding: 15px;
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -54,7 +54,7 @@
   transition: 0.47s ease-in-out;
 }
 #sidebar #postb:hover {
-  background-color: rgba(29, 156, 240, 0.833);
+  background-color: rgb(29, 156, 240);
   cursor: pointer;
   width: 50%;
 }
@@ -105,7 +105,7 @@
   padding-left: 10%;
   z-index: 2;
   background-color: rgb(0, 0, 0);
-  max-width: 45vw;
+  width: 43vw;
   height: -moz-fit-content;
   height: fit-content;
   border-bottom: 0.5px solid rgb(84, 84, 84);
@@ -282,6 +282,7 @@
 }
 #mypost #access svg {
   width: 20px;
+  min-width: 17px;
   padding-inline: 0.5px;
   padding: 7px;
   height: auto;
@@ -405,4 +406,72 @@
 
 .container {
   display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+  #postt {
+    width: 70vw;
+  }
+  #rightside {
+    display: none;
+  }
+  #sidebar {
+    width: 12px;
+  }
+  #sidebar #tabs {
+    padding-left: 7px;
+    gap: 25px;
+  }
+  #sidebar #postb {
+    width: 33%;
+    transform: translateX(5vw);
+    background-color: rgb(29, 156, 240);
+  }
+  #sidebar #postb:hover {
+    background-color: rgb(29, 156, 240);
+    cursor: pointer;
+    color: white;
+  }
+  #nav #navelements {
+    padding-inline: 38%;
+  }
+  #mypost {
+    transform: translateX(0px);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-inline: 38px;
+  }
+  #mypost #tweetinput {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    transform: translateX(0px);
+    min-height: 70px;
+    padding-top: 10px;
+    padding-left: 39px;
+  }
+  #mypost #line {
+    width: 60vw;
+  }
+  #mypost #access {
+    width: 15px;
+    height: auto;
+    transform: translate(20px, 14px);
+  }
+  #mypost #access #postbb {
+    color: rgba(255, 255, 255, 0.46);
+    background-color: rgba(29, 156, 240, 0.508);
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-inline: 16px;
+    align-items: center;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 24px;
+    transition: 0.119s;
+  }
 }/*# sourceMappingURL=App.css.map */

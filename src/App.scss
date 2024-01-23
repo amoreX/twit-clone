@@ -9,7 +9,7 @@
 	border-right: 0.5px solid rgb(84, 84, 84);
 	margin: 0.1px solid white;
 	width:25%;
-	min-width: 25%;
+	min-width: 20%;
 	padding-top: 5px;
 	overflow: hidden;
 	#tabs{
@@ -42,11 +42,11 @@
 	}
 	#postb{
 		color: rgb(255, 255, 255);
-		background-color:rgb(29,155,240);
+		background-color:rgba(29, 156, 240, 0.556);
 		transform:translateX(7vw);
 		display:flex;
 		justify-content: center;
-		width:7%;
+		width:8%;
 		// padding-inline:30px;
 		padding:15px;
 		font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
@@ -56,7 +56,7 @@
         transition:0.47s ease-in-out;
 
 		&:hover{
-			background-color:rgba(29, 156, 240, 0.833);
+			background-color:rgb(29, 156, 240);
 			cursor:pointer;
 			width:50%;
 
@@ -126,7 +126,7 @@
 	z-index: 2;
 	background-color: rgb(0, 0, 0);
 	// width:44vw;
-	max-width:45vw;
+	width:43vw;
 	height:fit-content;
 	// transform: translate(25.1vw,0px);
 	// white-space: normal;
@@ -151,6 +151,7 @@
 		font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
 		font-size: 20px;
 		padding-top: 5px;
+
 		// white-space: normal;
 		// overflow-wrap: break-word;
 	}
@@ -322,6 +323,7 @@
 			background-color: rgb(0, 0, 0);
 			svg{
 				width: 20px;
+				min-width: 17px;
 				padding-inline:0.5px;
 				padding:7px;
 				height: auto;
@@ -466,3 +468,77 @@
     display: flex;
 }
 
+@media screen and (max-width:1100px){
+
+	#postt{
+		// transform:translateX(10px);
+		width:70vw;
+	}
+	#rightside{
+		display:none;
+	}
+	#sidebar{
+		width:12px;
+		#tabs{
+			padding-left: 7px;
+			gap:25px;
+		}
+		#postb{
+			width:33%;
+			transform:translateX(5vw);
+			background-color:rgb(29, 156, 240);
+			&:hover {
+				background-color: rgba(29, 156, 240);
+				cursor: pointer;
+				color: white;
+			}
+		}
+	}
+	#nav{
+		#navelements{
+			padding-inline:38%;
+		}
+		// transform: translateX(20px);
+	}
+	#mypost{
+		transform:translateX(0px);
+		width:fit-content;
+		padding-inline: 38px;
+		#tweetinput{
+			font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
+			font-size: 16px;
+			width:100%;
+			transform:translateX(0px);
+			min-height:70px;
+			padding-top:10px;
+			padding-left: 39px;
+		}
+		#line{
+			width:60vw;
+		}
+		#access{
+			width:15px;
+			height:auto;
+			transform:translate(20px,14px);
+			#postbb{
+				color: rgba(255, 255, 255, 0.46);
+				background-color:rgba(29, 156, 240, 0.508);
+				// transform:translateX(17vw);
+				margin-left: auto;
+				display:flex;
+				justify-content: center;
+				width:fit-content;
+				padding-inline:16px;
+				align-items: center;
+				// padding:15px;
+				font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;		
+				font-weight: 500;
+				font-size:1rem;
+				border-radius: 24px;
+				transition:0.119s ;
+			}
+			
+		}
+	}
+
+}
