@@ -1,6 +1,6 @@
 export function formattime(createdStr) {
-    const date = new Date(createdStr);
-    const dateToday = new Date();
+    const date = createdStr;
+    const dateToday = Date.now();
     let seconds = (dateToday - date) / 1000;
     const time = {
       seconds: Math.floor(seconds),
