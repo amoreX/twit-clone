@@ -32,7 +32,7 @@ export default function nav(){
             <div id="allposts">
                 {tweets.length > 0 ? (
                     tweets.map((temptweet, index) => (
-                    <Posttfr key={index} id={temptweet.name} username={temptweet.username} time={formattime(temptweet.createdAt)} >{temptweet.tweet}</Posttfr>
+                    <Posttfr key={index} id={temptweet.name} username={temptweet.username} time={formattime(temptweet.createdAt)} tweetimg={temptweet.tweetimglink} >{temptweet.tweet}</Posttfr>
                     ))
                         ) : (<p style={{ color: 'white' }}>Loading...</p>)}
                 

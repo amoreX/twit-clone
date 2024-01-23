@@ -1,5 +1,5 @@
 import Postb from "./mypostbutton";
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 import axios from 'axios'
 import cors from 'cors'
 export default function mypost(){
@@ -16,6 +16,27 @@ export default function mypost(){
             return name;
         }
     });
+    
+        const cloudinaryRef = useRef();
+        const widgetRef = useRef();
+        let [imageUrl, setImageUrl] = useState("");
+        useEffect(() => {
+          cloudinaryRef.current = window.cloudinary;
+          widgetRef.current = cloudinaryRef.current.createUploadWidget(
+            {
+              cloudName: "dp0v0j3si",
+              uploadPreset: "u7h2btrf",
+            },
+            function (error, result, widget) {
+              console.log("hi");
+              if (result?.info?.secure_url) {
+                console.log(result?.info?.secure_url);
+                setImageUrl(result?.info?.secure_url);
+              }
+            }
+          );
+        }, []);
+      
     const [actualusername, setActualusername] = useState(()=>{
         if(window.localStorage.getItem('actualusername')){
             return(
@@ -43,7 +64,7 @@ export default function mypost(){
     const postData = async () => {
         try {
           const response = await axios.post('https://twit-vtp0.onrender.com/update', {
-            tweet: tweetText,name: username,username:actualusername,
+            tweet: tweetText,name: username,username:actualusername,tweetimglink:imageUrl,
           });
           setTweetText('');
         } catch (error) {
@@ -76,14 +97,18 @@ export default function mypost(){
     }, []);
 
 
+
+
     return(
         <div id="mypost">
             <textarea type="text" id="tweetinput" value={tweetText} onChange={handleTextareaChange} placeholder ="What is happening?!"/>
             
             <div id="line"></div>
             <div id="access">
-                {gal}{gif}{svg2}{svg3}{svg4} <Postb onClick={()=>{fn()}}/>
+                <div id="upload" onClick={() => widgetRef.current.open()}>{gal}</div>{gif}{svg2}{svg3}{svg4} <Postb onClick={()=>{fn()}}/>
             </div>
         </div>
     )
 }
+
+
