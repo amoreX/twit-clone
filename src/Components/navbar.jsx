@@ -3,6 +3,7 @@ import cors from 'cors'
 import { useState , useEffect } from 'react'
 import Posttfr from "./Postfr"
 import Mypost from "./Mypost"
+import {formattime} from "./Utils/formatetime"
 export default function nav(){
     const [tweets, setTweets] = useState([]);
     useEffect(() => {
@@ -30,7 +31,7 @@ export default function nav(){
             <div id="allposts">
                 {tweets.length > 0 ? (
                     tweets.map((temptweet, index) => (
-                    <Posttfr key={index} id={temptweet.name} username={temptweet.username}>{temptweet.tweet}</Posttfr>
+                    <Posttfr key={index} id={temptweet.name} username={temptweet.username} time={formattime(temptweet.createdAt)} >{temptweet.tweet}</Posttfr>
                     ))
                         ) : (<p style={{ color: 'white' }}>Loading...</p>)}
                 
