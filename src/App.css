@@ -422,6 +422,10 @@
   #postt {
     width: 70vw;
   }
+  #postt #content #tweetimg {
+    width: 56vw;
+    height: auto;
+  }
   #rightside {
     display: none;
   }

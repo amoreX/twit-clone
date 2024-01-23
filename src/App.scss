@@ -483,6 +483,12 @@
 	#postt{
 		// transform:translateX(10px);
 		width:70vw;
+		#content{
+			#tweetimg{
+				width:56vw;
+				height:auto;
+			}
+		}
 	}
 	#rightside{
 		display:none;
