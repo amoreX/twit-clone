@@ -13,8 +13,8 @@ export default function Postfr(props){
             </div>
             <div id="content">
                 {props.children}
-                {props.tweetimglink} 
-                <img id="tweetimg" src={props.tweetimglink} />
+                {/* {props.tweetimg}  */}
+                <img id="tweetimg" src={props.tweetimg} />
             </div>
             {/* <div id="line"></div> */}
             <div id="access">
